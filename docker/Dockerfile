@@ -208,9 +208,9 @@ RUN apt-get update && \
         gosu \
         python-is-python3 \
         python3-pip && \
-    if [[ "$DISABLE_ROS_INSTALLATION" != "true" ]]; then \
-        apt-get install -y ros-${ROS_DISTRO}-ros-core; \
-    fi && \
+    #if [[ "$DISABLE_ROS_INSTALLATION" != "true" ]]; then \
+    #    apt-get install -y ros-${ROS_DISTRO}-ros-core; \
+    #fi && \
     rm -rf /var/lib/apt/lists/*
 
 # configure pip
